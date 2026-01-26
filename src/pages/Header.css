@@ -1,0 +1,58 @@
+
+    .header {
+        position: fixed;
+        top: 0;              /* 👈 REQUIRED */
+        left: 0;             /* 👈 REQUIRED */
+        width: 100%;         /* 👈 REQUIRED */
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 0;
+        
+
+        background-color: #f0f0f0;
+        z-index: 1000;       /* 👈 stays above content */
+    }
+
+    .left-section
+    {
+        margin-left: 20px;
+    }
+    .left-section, p{
+        font-size: 20px;
+        font-weight: 600;
+        letter-spacing: 2px;
+    }
+
+    .material-symbols-outlined {
+      font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24;
+      font-size: 30px;
+      cursor: pointer;
+    }
+
+    button {
+      border: none;
+      background: none;
+    }
+
+
+    .right-section
+    {
+        margin-right: 20px;
+    }
+
+#colorBtn {
+  background: none;
+  border: none;
+  cursor: pointer;
+
+  font-size: 28px;
+
+  /* THIS is the key */
+  color: inherit;
+}

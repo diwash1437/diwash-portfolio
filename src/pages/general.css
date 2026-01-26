@@ -1,0 +1,44 @@
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Roboto', sans-serif;
+        transition: background-color 0.3s;
+    }
+
+
+    :root {
+        --surface: #ffffff;
+        --surface-container-low: #f5f5f5;
+        --on-surface-variant: #333;
+        --primary: #3f51b5;
+    }
+
+    /* Dark mode overrides */
+    body.dark-mode {
+        --surface: #323946;
+        --surface-container-low: #404b5a;
+        --on-surface-variant: #ffffff;
+        --primary: #00adb5;
+    }
+
+
+    p {
+        font-size: 20px;
+        font-weight: 600;
+        letter-spacing: 2px;
+    }
+
+    h3 {
+        font-size: 25px;
+        font-weight: 900;
+        margin-bottom: 3px;
+        letter-spacing: 2px;
+    }
+
+    h2 {
+        font-size: 28px;
+        font-weight: 900;
+        margin-bottom: 3px;
+        letter-spacing: 2px;
+
+    }
