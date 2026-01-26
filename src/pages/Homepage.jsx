@@ -2,7 +2,7 @@ export function Homepage()
 {
     return(
         <>
-        diwash
+        <p>diwash</p>
         </>
     )
 }
