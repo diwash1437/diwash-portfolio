@@ -8,8 +8,11 @@
 
     /* text  */
     --on-text-dark: hsl(264, 8%, 12%); /* orange-red, too aggressive for body text */
-;
     --on-text-light: hsl(264, 27%, 27%);
+
+    /* link text color  */
+    --on-link-text-dark: hsl(264, 27%, 27%);
+    --on-link-text-light: rgb(91, 207, 78);
 
    /* card, header, slidebar, modals  start */
 
@@ -93,7 +96,7 @@
     --motion-easing-linear: cubic-bezier(0, 0, 1, 1);
 }
 :root {
-    --wp--preset--font-size--normal: 16px;
+    --wp--preset--font-size--normal: 15px;
     --wp--preset--font-size--huge: 42px;
 }
 

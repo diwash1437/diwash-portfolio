@@ -10,7 +10,8 @@ export function AboutMe({isWhite}) {
             <h2 className="cart-title title-large">About</h2>
 
             <p className="cart-text">
-                With years of experience in graphic and web design I have mastered the skills of understanding client requirements according to the latest trends.          </p>
+                With years of experience in graphic and web design I have mastered the skills of understanding client 
+                requirements according to the latest trends.          </p>
 
             <ul className="about-list">
                 <li className="list-item">
@@ -23,13 +24,13 @@ export function AboutMe({isWhite}) {
                     <span className="material-symbols-outlined" aria-hidden="true">
                         work
                     </span>
-                    <a href="https://artory.co.jp/" target="_blank"><span className="label-small">.................</span></a>
+                    <a href="" target="_blank"><span className="label-small">Pound honten</span></a>
                 </li>
                 <li className="list-item">
                     <span className="material-symbols-outlined" aria-hidden="true" style={{height: "1em"}}>
                         captive_portal
                     </span>
-                    <a href="" className="lebel-small">................</a>
+                    <a href="http://localhost:5173/diwash-portfolio/" className="lebel-small">diwash-portfolio</a>
                 </li>
             </ul>
         </div>

@@ -8,13 +8,14 @@
 [data-theme="light"] {
   --bg: var(--background-light);
   --text: var(--on-text-light);
-  --subText: var(--on-surface-variant-light)
+  --subText: var(--on-surface-variant-light);
+  --linkText: var( --on-link-text-light);
 
-  
 }
 
 [data-theme="dark"] {
   --bg: var(--background-dark);
   --text: var(--on-text-dark);
-  --subText: var(--on-surface-variant-dark)
+  --subText: var(--on-surface-variant-dark);
+  --linkText: var( --on-link-text-dark);
 }
