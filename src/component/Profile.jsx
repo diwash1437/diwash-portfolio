@@ -1,16 +1,16 @@
  import './profile.css'
- import '../index.css'
- export function Profile({isWhite})
+
+ export function Profile()
 {
     return(
             // <!-- Profile information  -->
     <div className="profile-info-flex">
       <div className="left-profile-info">
-           <img src={'./diwash.jpg'} alt="" />
+           <img src={'./samjhana.jpg'} alt="" />
         </div>
       <div className="right-profile-info">
-        <h3>Web developer</h3>
-        <h2>Diwash Sherma</h2>
+        <h2>Web developer</h2>
+        <h3>Samjhana Sherma</h3>
         <p className="body-large">A passionate web developer from Nepal, now creating beautiful and responsive websites from
           the heart of Kyoto, Japan.</p>
 

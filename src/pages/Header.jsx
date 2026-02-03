@@ -7,14 +7,7 @@ export function Header({isWhite, onToggleTheme })
 
 
     return(
-    <div className="header" style={{
-        backgroundColor: isWhite
-          ? "var(--background-light)"
-          : "var(--background-dark)",
-        color: isWhite
-          ? "var(--on-background-light)"
-          : "var(--on-background-dark)",
-    }}>
+    <div className="header">
     <div className="left-section">
       <p>Diwash Sherma</p>
     </div>

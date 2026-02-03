@@ -37,11 +37,15 @@
     align-items: start;
     flex-direction: column;
 }
-.right-profile-info
-h2
+
+.right-profile-info h2,
+.right-profile-info h3
 {
-   margin: 4px;
+   /* margin: 4px; */
+   font-size: var(--title-large);
    padding: 0;
+   font-weight: bold;
+   color: var(--text)
 }
 
 .body-large
@@ -49,7 +53,10 @@ h2
 
     margin-top: 7px;
     line-height: 30px;
-    letter-spacing: .19px;
+    letter-spacing: 1px;
+    font-size: var(--body-medium);
+    font-weight: var(--weight-medium);
+    color: var(--subText);
 }
 
 .btn-wrapper {
@@ -57,12 +64,13 @@ h2
     flex-direction: column;
     flex-wrap: wrap;
     gap: 8px;
+    color: var(--subText);
 }
 
 
 .label-large {
-    font-size: 20px;
-    letter-spacing: 1px;
+    font-size: var(--body-medium);
+    letter-spacing: 1.2px;
 }
 .label-large, .title-medium, .title-small {
     font-weight: 600;

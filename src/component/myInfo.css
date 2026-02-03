@@ -1,0 +1,58 @@
+.myinfo-container
+{
+ max-width: 1000px;
+ height: 100%;
+ margin-left: 10px;
+   
+}
+
+.info-container
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+    margin-left: 15px;
+    padding: 14px 25px;
+ 
+  
+}
+.info-container button
+{
+  font-size: var(--title-large);
+  font-weight: var(--weight-medium);
+}
+.tab-text
+{
+    position: relative;
+    
+}
+.tab-text::after
+{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    top: 43px;
+    width: 100%;
+    height: 3px;
+    background-color: red;
+    opacity: 0;
+
+    transform: scaleX(0);
+    transition: opacity 0.3s ease,
+    transform 0.3s ease;
+       
+    
+}
+.tab-text:hover::after
+{
+    opacity: 1;
+    transform: scaleX(1);
+
+}
+.myinfo-display
+{
+    /* margin-top: 1px; */
+    border-top: 1px solid var(--outline-variant-dark);
+    /* padding: 0 20px; */
+}

@@ -1,0 +1,29 @@
+.about-card
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 30px;
+    border-radius: var(--shape-corner-large);
+    height: fit-content;
+    box-shadow: 0px 1px 1px 1px  var( --outline-variant-dark);
+ 
+
+   
+}
+
+
+.cart-text
+{
+  padding-top: 10px;
+  margin-top: 1px;
+  border-top: 1px solid var(--outline-variant-dark);
+  font-weight: 400;
+  font-size: var(--wp--preset--font-size--normal);
+}
+
+.cart-title
+{
+  font-size: var(--title-large);
+}

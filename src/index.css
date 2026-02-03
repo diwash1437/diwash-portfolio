@@ -1,31 +1,67 @@
 
 :root {
-    --background-dark: hsl(260, 14%, 8%);
-    --on-background-dark: hsl(280, 17%, 90%);
+    /* 🌗 BACKGROUND (whole page) */
+    --background-dark: hsl(36, 27%, 78%);
+   
+    --background-light: hsl(293, 100%, 98%);
+
+
+    /* text  */
+    --on-text-dark: hsl(264, 8%, 12%); /* orange-red, too aggressive for body text */
+;
+    --on-text-light: hsl(264, 27%, 27%);
+
+   /* card, header, slidebar, modals  start */
+
+    /* 🧱 SURFACE (cards, sections, panels)  */
     --surface-dark: hsl(260, 14%, 8%);
     --on-surface-dark: hsl(280, 17%, 90%);
-    --on-surface-variant-dark: hsl(270, 11%, 79%);
-    --surface-container-low-dark: hsl(264, 8%, 12%);
-    --surface-container-dark: hsl(257, 10%, 14%);
-    --surface-bright-dark: hsl(270, 5%, 23%);
-    --primary-dark: hsl(258, 100%, 87%);
-    --on-primary-dark: hsl(259, 58%, 28%);
-    --outline-dark: hsl(264, 5%, 58%);
-    --outline-variant-dark: hsl(264, 7%, 29%);
-    --background-light: hsl(293, 100%, 98%);
-    --on-background-light: hsl(264, 8%, 12%);
     --surface-light: hsl(293, 100%, 98%);
     --on-surface-light: hsl(264, 8%, 12%);
-    --on-surface-variant-light: hsl(264, 7%, 29%);
-    --surface-container-low-light: hsl(278, 44%, 96%);
+
+    /* Slight contrast card */
+    --surface-container-dark: hsl(257, 10%, 14%);
     --surface-container-light: hsl(276, 38%, 95%);
-    --surface-bright-light: hsl(293, 100%, 98%);
+    /* Very subtle container */
+    --surface-container-low-dark: hsl(264, 8%, 12%);
+   --surface-container-low-light: hsl(278, 44%, 96%);
+
+   /* card, header, slidebar, modals  end */
+    /* 📝 TEXT TYPES (VERY IMPORTANT)
+        Main text */
+ /* color: var(--on-background-light); */
+/* or */
+/* color: var(--on-surface-light); */
+    /* Secondary / description text */
+    --on-surface-variant-light: hsl(270, 14%, 17%);
+    --on-surface-variant-dark: hsl(264, 7%, 29%);
+
+    /* Muted / helper text */
+    --outline-dark: hsl(264, 5%, 58%);
+    --outline-light: hsl(270, 4%, 47%);
+
+
+    /* button  */
+    /* dark  */
+    --primary-dark: rgb(2, 120, 83);
+    --on-primary-dark: hsl(260, 36%, 95%);
+    /* light  */
     --primary-light: hsl(256, 34%, 48%);
     --on-primary-light: hsl(0, 0%, 100%);
-    --outline-light: hsl(270, 4%, 47%);
+
+    /* Secondary / outlined button */
+    /* background: transparent;
+   color: var(--primary-light);
+  border: 1px solid var(--outline-light); */
+
+
+  /* 📦 BORDERS & DIVIDERS */
+    
+    --surface-bright-dark: hsl(270, 5%, 23%);
+    --outline-variant-dark: hsl(264, 7%, 29%);
+    --surface-bright-light: hsl(293, 100%, 98%);
     --outline-variant-light: hsl(270, 11%, 79%);
-    --font-primary: 'Open Sans', sans-serif;
-    --font-secondary: 'Noto Sans', sans-serif;
+
     --base-font-size: 62.5%;
     --display-large: 5.7rem;
     --display-medium: 4.5rem;
@@ -50,7 +86,7 @@
     --shape-corner-large: 16px;
     --shape-corner-full: 500px;
     --shape-corner-circle: 50%;
-    --elevation-1: 0px 1px 3px 1px #00000026, 0px 1px 2px 0px #0000004d;
+    /* --elevation-1: 0px 1px 3px 1px #00000026, 0px 1px 2px 0px #0000004d; */
     --section-padding: 24px;
     --top-bar-height: 62px;
     --motion-duration-short-1: 100ms;
@@ -59,30 +95,6 @@
 :root {
     --wp--preset--font-size--normal: 16px;
     --wp--preset--font-size--huge: 42px;
-}
-:root {
-    --wp-block-synced-color: #7a00df;
-    --wp-block-synced-color--rgb: 122, 0, 223;
-    --wp-bound-block-color: var(--wp-block-synced-color);
-    --wp-editor-canvas-background: #ddd;
-    --wp-admin-theme-color: #007cba;
-    --wp-admin-theme-color--rgb: 0, 124, 186;
-    --wp-admin-theme-color-darker-10: #006ba1;
-    --wp-admin-theme-color-darker-10--rgb: 0, 107, 160.5;
-    --wp-admin-theme-color-darker-20: #005a87;
-    --wp-admin-theme-color-darker-20--rgb: 0, 90, 135;
-    --wp-admin-border-width-focus: 2px;
-}
-
-/* DARK THEME */
-[data-theme="dark"] {
-  --background: var(--background-dark);
-  --on-background: var(--on-background-dark);
-
-  --surface: var(--surface-dark);
-  --on-surface: var(--on-surface-dark);
-  --on-surface-variant: var(--on-surface-variant-dark);
-  --outline: var(--outline-dark);
 }
 
 html {
@@ -95,19 +107,20 @@ html {
     padding: 0;
     box-sizing: border-box;
 }
-*, ::after, ::before {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+body {
+        
+ font-family: "Poppins", sans-serif;
+
 }
 
 
-    .material-symbols-outlined {
+  .material-symbols-outlined {
       font-variation-settings:
         'FILL' 0,
         'wght' 400,
         'GRAD' 0,
         'opsz' 24;
-      font-size: 30px;
+      font-size: 27px;
+      color: var(--primary-dark);
       cursor: pointer;
     }
