@@ -30,7 +30,7 @@ export function AboutMe({isWhite}) {
                     <span className="material-symbols-outlined" aria-hidden="true" style={{height: "1em"}}>
                         captive_portal
                     </span>
-                    <a href="http://localhost:5173/diwash-portfolio/" className="lebel-small">diwash-portfolio</a>
+                    <a href="https://diwash1437.github.io/diwash-portfolio/" className="lebel-small">diwash-portfolio</a>
                 </li>
             </ul>
         </div>
